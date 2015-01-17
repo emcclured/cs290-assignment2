@@ -1,0 +1,123 @@
+﻿/* make the table show black borders */
+
+table, th, tr, td{
+	empty-cells:show;
+	border: 1px solid black;
+}
+
+/* by default, make all th bold with background white */
+
+th {
+	font-weight:bold;
+}
+
+/* make all first child th normal, italic font,
+   with background white */
+
+th:first-child{
+	text-align:center;
+	font-weight:normal;
+	font-style:italic;
+}
+
+/* make the th that follows a thead
+   and a tr bold, normal font, and white by 
+   using the child selector css command > */
+
+thead > tr > th {
+	font-weight:bold;
+	font-style:normal;
+	background:white;
+}
+
+/* make the first th that follows a tfoot
+   and a tr bold, normal font, and white by 
+   using the child selector css command > */
+
+tfoot > tr > th:first-child {
+	font-weight:bold;
+	font-style:normal;
+	background:white;
+}
+
+/* make the second th that follows a tfoot
+   and a tr bold, normal font, and white by 
+   using the child selector css command > */
+
+tfoot > tr > th {
+	font-weight:bold;
+	font-style:normal;
+	background:white;
+}
+
+/* make every odd row light green */
+
+tr:nth-child(odd){
+	background:lightgreen;
+}
+
+/* make every even row light blue */
+
+tr:nth-child(even){
+	background:lightblue;
+}
+
+td:nth-child(2){
+	color:red;
+}
+
+td:nth-child(4){
+	color:blue;
+}
+
+dt:hover + dd{
+	background:purple;
+}
+
+div.outer-content{
+	background:pink;
+	max-width:75%;
+	height:75px;
+	padding:10px;
+	padding-left:275px;
+	padding-top:40px;
+}
+
+div.inner-content{
+	text-align:center;
+	background:lightblue;
+	max-width:56%;
+}
+
+form{
+	border-style:solid;
+}
+
+/*Referenced the following site:http://www.w3schools.com/tags/tag_hr.asp*/
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+}
+
+/*Referenced the following site:http://www.w3schools.com/tags/tag_fieldset.asp*/
+fieldset{
+	display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+}
+
+img{
+	width:100px;
+	height:125px;
+	float:left;
+}
